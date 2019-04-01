@@ -45,6 +45,8 @@ module.exports = {
         // messages.splice(index, 1)
         // res.status(200).send(messages)
 
+        //what i had before
+
         const deleteID = req.params.id;
         messageIndex = messages.findIndex(message => message.id == deleteID);
         messages.splice(messageIndex, 1);
